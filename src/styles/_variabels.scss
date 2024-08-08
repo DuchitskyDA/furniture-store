@@ -40,6 +40,5 @@ $ff-secondary: 'Inter';
 $transition-primary: 0.2s ease-in;
 
 // sections padding
-$p-section: clamp(1rem, 0.912rem + 0.376vw, 1.25rem)
-  clamp(2rem, -0.817rem + 12.019vw, 10rem);
+$p-section: clamp(1rem, 0.912rem + 0.376vw, 1.25rem) 15px;
 $p-header: 16px clamp(2rem, -0.817rem + 12.019vw, 10rem);

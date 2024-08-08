@@ -1,0 +1,176 @@
+@import '../../styles/variabels';
+
+@mixin typography(
+  $size: $fz-text-s,
+  $weight: $fw-primary,
+  $family: $ff-primary,
+  $spacing: 0,
+  $height: normal,
+  $color: $color-text
+) {
+  color: $color-text;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $family;
+  letter-spacing: $spacing;
+  line-height: $height;
+}
+
+.text {
+  @include typography(
+    $fz-text-s,
+    $fw-primary,
+    $ff-primary,
+    0,
+    normal,
+    $color-text
+  );
+}
+
+.spacing0 {
+  letter-spacing: 0;
+}
+
+.spacing06 {
+  letter-spacing: 0.6px;
+}
+
+.white {
+  color: $color-bg;
+}
+
+.grey {
+  color: $color-text-secondary;
+}
+
+.blue {
+  color: $color-secondary-blue;
+}
+
+.green {
+  color: #38cb89;
+}
+
+.poppins {
+  font-family: $ff-primary;
+}
+
+.inter {
+  font-family: $ff-secondary;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.size14 {
+  font-size: $fz-text-xs;
+}
+
+.size16 {
+  font-size: $fz-text-s;
+}
+
+.size18 {
+  font-size: 18px;
+}
+
+.size20 {
+  font-size: 20px;
+}
+
+.size22 {
+  font-size: 22px;
+}
+
+.size26 {
+  font-size: 26px;
+}
+
+.size28 {
+  font-size: $fz-heading-s;
+}
+
+.size38 {
+  font-size: 38px;
+}
+
+.size40 {
+  font-size: 40px;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight600 {
+  font-weight: 600;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+.weight800 {
+  font-weight: 800;
+}
+
+.height16 {
+  line-height: 16px;
+}
+
+.height18 {
+  line-height: 18px;
+}
+
+.height20 {
+  line-height: 20px;
+}
+
+.height22 {
+  line-height: 22px;
+}
+
+.height24 {
+  line-height: 24px;
+}
+
+.height26 {
+  line-height: 26px;
+}
+
+.height28 {
+  line-height: 28px;
+}
+
+.height32 {
+  line-height: 32px;
+}
+
+.height34 {
+  line-height: 34px;
+}
+
+.height38 {
+  line-height: 38px;
+}
+
+.height40 {
+  line-height: 40px;
+}
+
+.height44 {
+  line-height: 44px;
+}

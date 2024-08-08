@@ -1,0 +1,79 @@
+@import '../../styles/variabels';
+
+.articles {
+  padding: $p-section;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 40px;
+  }
+
+  &__wrapper {
+    @media screen and (width >= 768px) {
+      inline-size: 50%;
+    }
+
+    @media screen and (width >= 960px) {
+      inline-size: 100%;
+    }
+  }
+
+  &__item {
+    @media screen and (width >= 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5px;
+    }
+
+    @media screen and (width >= 960px) {
+      flex-direction: column;
+    }
+
+    &_image {
+      inline-size: 100%;
+      block-size: 100%;
+      aspect-ratio: 1/1;
+    }
+
+    &_title {
+      display: flex;
+
+      @media screen and (width >= 768px) {
+        justify-content: center;
+      }
+
+      @media screen and (width >= 960px) {
+        margin-block-end: 8px;
+        justify-content: left;
+      }
+    }
+
+    &_text {
+      @media screen and (width >= 768px) {
+        inline-size: 50%;
+        margin-block: auto;
+        text-align: center;
+      }
+
+      @media screen and (width >= 960px) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (width >= 960px) {
+    flex-direction: row;
+  }
+
+  @media screen and (width >= 1200px) {
+    gap: 96px;
+  }
+}

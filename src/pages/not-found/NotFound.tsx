@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import styles from './index.module.scss';
-import Text from '../../components/ui/text/Text.tsx';
+import styles from '../../app/styles/not-found.module.scss';
+import Text from '../../shared/ui/text/Text.tsx';
 
 export const NotFound = () => {
   return (

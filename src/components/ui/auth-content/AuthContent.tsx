@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from './auth-content.module.scss';
-import Text from '../text/Text.tsx';
-import FormUI, { InputData } from '../form/FormUI.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
+import { Form, InputData } from '../../../features';
 import { Link } from 'react-router-dom';
 
 interface AuthContentProps {
@@ -48,7 +48,7 @@ const AuthContent: FC<AuthContentProps> = ({
           </Text>
         </Link>
       </div>
-      <FormUI link={title} inputsData={inputs} />
+      <Form link={title} inputsData={inputs} />
     </div>
   );
 };

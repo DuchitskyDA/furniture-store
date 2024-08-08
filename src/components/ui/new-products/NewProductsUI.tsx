@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import MainCarouselUI from '../main-carousel/MainCarouselUI';
 import ForwardLink from '../forward-link/ForwardLink';
-import Text from '../text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 const NewProductsUI = () => {
   return (

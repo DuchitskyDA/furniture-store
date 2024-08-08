@@ -1,9 +1,8 @@
 import type { FC } from 'react';
-import styles from './register.module.scss';
-import { InputData } from '../../components/ui/form/FormUI.tsx';
+import styles from '../../app/styles/register.module.scss';
+import { InputData } from '../../features/form/ui/Form.tsx';
 import AuthHeading from '../../components/ui/auth-heading/AuthHeading.tsx';
 import AuthContent from '../../components/ui/auth-content/AuthContent.tsx';
-import { Footer, Header } from '../../components';
 
 const mockInputs: InputData[] = [
   {
@@ -65,7 +64,6 @@ const mockInputs: InputData[] = [
 export const Register: FC = () => {
   return (
     <>
-      <Header />
       <main className={styles.register}>
         <div className={styles.wrapper}>
           <AuthHeading
@@ -81,7 +79,6 @@ export const Register: FC = () => {
           />
         </div>
       </main>
-      <Footer />
     </>
   );
 };

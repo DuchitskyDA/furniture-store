@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 import styles from './index.module.scss';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Text from '../text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 interface ForwardLinkProps {
   children: ReactNode;

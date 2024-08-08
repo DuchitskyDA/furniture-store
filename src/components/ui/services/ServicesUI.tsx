@@ -1,6 +1,6 @@
 import type { FC, ReactElement } from 'react';
 import styles from './services.module.scss';
-import Text from '../text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 interface ServicesUIProps {
   services: {

@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 import Person2Icon from '@mui/icons-material/Person2';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import Text from '../../ui/text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 const HeaderUI = () => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);

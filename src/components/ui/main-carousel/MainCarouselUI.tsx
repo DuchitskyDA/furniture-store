@@ -1,10 +1,10 @@
 import Button from '../button/Button';
-import Carousel from '../carousel/Carousel';
+import { Carousel } from '../../../features/';
 import styles from './main-carousel.module.scss';
 import { useEffect, useState } from 'react';
 import StarIcon from '@mui/icons-material/Star';
 import useWindowSize from '../../../utils/hooks/useWindowSize.ts';
-import Text from '../text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 const productsList = [
   {
