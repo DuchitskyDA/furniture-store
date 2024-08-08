@@ -1,0 +1,20 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media screen and (width >= 768px) {
+    align-items: center;
+    max-width: 736px;
+    inline-size: 50%;
+  }
+
+  &__image {
+    inline-size: 100%;
+
+    img {
+      inline-size: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+}

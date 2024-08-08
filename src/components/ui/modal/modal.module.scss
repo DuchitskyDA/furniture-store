@@ -1,0 +1,19 @@
+@import '../../../styles/variabels';
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  margin: auto;
+  padding: 40px 40px 60px;
+  background-color: $color-bg;
+  border-radius: 40px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

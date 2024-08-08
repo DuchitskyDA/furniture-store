@@ -1,0 +1,10 @@
+@import '../../../styles/variabels';
+
+.container {
+  padding: $p-section;
+}
+
+.title {
+  max-inline-size: 125px;
+  margin-block-end: 40px;
+}

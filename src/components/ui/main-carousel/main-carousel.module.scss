@@ -1,0 +1,37 @@
+@import '../../../styles/variabels';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  .item {
+    aspect-ratio: 1/1;
+    inline-size: 100%;
+    block-size: 100%;
+    margin-block-end: 40px;
+  }
+
+  .footer {
+    padding-block: 28px;
+
+    .title {
+      font-weight: $fw-secondary;
+      margin-block-end: 4px;
+    }
+
+    .prices {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      .new {
+        font-weight: $fw-secondary;
+      }
+
+      .old {
+        color: $color-text-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../styles/variabels';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (width >= 960px) {
+    flex-direction: row;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (width >= 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @media screen and (width >= 960px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      margin-block-end: 10px;
+
+      @media screen and (width >= 768px) {
+        inline-size: 50%;
+        text-align: center;
+      }
+
+      @media screen and (width >= 960px) {
+        inline-size: 100%;
+        text-align: left;
+      }
+
+      &_title {
+        display: flex;
+        margin-block-end: 6px;
+
+        @media screen and (width >= 768px) {
+          justify-content: center;
+        }
+
+        @media screen and (width >= 960px) {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &__image {
+      inline-size: 100%;
+      block-size: 100%;
+
+      @media screen and (width >= 768px) {
+        inline-size: 50%;
+        aspect-ratio: 1.5/1;
+      }
+
+      @media screen and (width >= 960px) {
+        inline-size: 100%;
+        aspect-ratio: 1/1;
+      }
+
+      &_item {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+
+        @media screen and (width >= 960px) {
+          aspect-ratio: 1/1;
+        }
+      }
+    }
+  }
+}

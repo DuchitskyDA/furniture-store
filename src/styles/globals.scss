@@ -1,0 +1,14 @@
+@import 'variabels';
+@import 'fonts';
+
+#root {
+  block-size: 100vh;
+}
+
+body {
+  font-size: $fz-text-s;
+  color: $color-text;
+  background: $color-bg;
+  font-family: $ff-primary;
+  font-weight: $fw-primary;
+}

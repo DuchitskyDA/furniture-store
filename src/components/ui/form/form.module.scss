@@ -1,0 +1,60 @@
+@import '../../../styles/variabels';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__input {
+    position: relative;
+
+    &_item {
+      border: none;
+      border-bottom: 1px solid rgb(232 236 239);
+      color: $color-text-secondary;
+      padding: 16px 8px;
+      font-size: $fz-text-s;
+      font-family: $ff-secondary;
+      line-height: 26px;
+      inline-size: 100%;
+
+      &::placeholder {
+        font-size: $fz-text-s;
+        font-family: $ff-secondary;
+        line-height: 26px;
+      }
+    }
+
+    &_error {
+      position: absolute;
+      color: $color-error;
+      bottom: -26px;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__password {
+    display: flex;
+
+    &_icon {
+      position: absolute;
+      inset-block-end: 17.5px;
+      inset-inline-end: 8px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: currentcolor;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/variabels';
+
+.container {
+  padding: $p-section;
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px 8px;
+    grid-template-areas:
+      '. .'
+      '. .';
+
+    @media screen and (width >= 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 12px;
+    }
+
+    &__item {
+      padding: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+
+      @media screen and (width >= 768px) {
+        padding: 48px 32px;
+      }
+
+      &_icon {
+        color: $color-text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

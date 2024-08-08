@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (width >= 768px) {
+    justify-content: center;
+  }
+
+  &__description {
+    display: flex;
+    gap: 5px;
+  }
+}

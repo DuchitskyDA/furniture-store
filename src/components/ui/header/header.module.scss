@@ -1,0 +1,17 @@
+@import '../../../styles/variabels';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $p-header;
+  z-index: 50;
+  position: fixed;
+  inline-size: 100%;
+  background-color: $color-bg;
+  box-shadow: 0 1px 6px 0 rgb(34 60 80 / 20%);
+
+  .menu {
+    cursor: pointer;
+  }
+}

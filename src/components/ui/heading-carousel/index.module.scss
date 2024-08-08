@@ -1,0 +1,19 @@
+@import '../../../styles/variabels';
+
+.container {
+  padding: $p-section;
+  padding-block: 0;
+
+  .item {
+    object-fit: cover;
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: $transition-primary;
+
+    @media screen and (width >= 768px) {
+      aspect-ratio: 2/1;
+    }
+  }
+}

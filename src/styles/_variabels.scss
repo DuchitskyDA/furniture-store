@@ -1,0 +1,45 @@
+// colors
+$color-primary: #1a237e;
+$color-secondary-blue: #377dff;
+$color-secondary-green: #38cb89;
+$color-secondary-orange: #ffab00;
+$color-bg: #fff;
+$color-bg-secondary: #212121;
+$color-hover: #323334ff;
+
+// text colors
+$color-text: #141718;
+$color-text-secondary: #323334;
+$color-accent-primary: #ffab00;
+$color-error: #ff5630;
+
+// font sizes for regular text
+$fz-text-xs: clamp(14px, 0.831rem + 0.188vw, 16px);
+$fz-text-s: clamp(16px, 0.912rem + 0.376vw, 20px);
+$fz-text-m: 20px;
+$fz-text-l: 22px;
+$fz-text-xl: 26px;
+
+// font sizes for titles
+$fz-heading-s: clamp(1.75rem, 1.618rem + 0.563vw, 2.125rem);
+$fz-heading-m: 34px;
+$fz-heading-m: 40px;
+
+// font weights
+$fw-primary: 400;
+$fw-secondary: 600;
+$fw-bold: 700;
+$fw-heading: 500;
+$fw-accent: 800;
+
+// font families
+$ff-primary: 'Poppins', sans-serif;
+$ff-secondary: 'Inter';
+
+// transitions
+$transition-primary: 0.2s ease-in;
+
+// sections padding
+$p-section: clamp(1rem, 0.912rem + 0.376vw, 1.25rem)
+  clamp(2rem, -0.817rem + 12.019vw, 10rem);
+$p-header: 16px clamp(2rem, -0.817rem + 12.019vw, 10rem);
