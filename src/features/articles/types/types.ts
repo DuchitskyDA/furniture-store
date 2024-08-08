@@ -5,5 +5,5 @@ export type TArticle = {
 };
 
 export type TArticlesProps = {
-  articles: TArticle[];
+  articles?: TArticle[];
 };

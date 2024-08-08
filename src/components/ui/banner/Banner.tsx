@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from './banner.module.scss';
 import ForwardLink from '../forward-link/ForwardLink';
-import Text from '../text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 interface BannerProps {
   bannerInfo?: {

@@ -1,50 +1,13 @@
-import styles from './form.module.scss';
-import { FieldErrors, Path, useForm } from 'react-hook-form';
+import styles from '../../../app/styles/form.module.scss';
+import { FieldErrors, useForm } from 'react-hook-form';
 import { FC, memo, useCallback, useState } from 'react';
-import Button from '../button/Button.tsx';
-import Text from '../text/Text.tsx';
+import Button from '../../../components/ui/button/Button.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { FormProps, FormValues } from '../types/types.ts';
 
-interface FormValues {
-  name: string;
-  userName: string;
-  email: string;
-  password: string;
-  termsOfUse: boolean;
-}
-
-interface InputOptions {
-  required?: string | boolean;
-  minLength?: {
-    value: number;
-    message: string;
-  };
-  maxLength?: {
-    value: number;
-    message: string;
-  };
-  pattern?: {
-    value: RegExp;
-    message: string;
-  };
-}
-
-export interface InputData {
-  name: Path<FormValues>;
-  placeholder: string;
-  className?: string;
-  hasPasswordInput?: boolean;
-  hasCheckbox?: boolean;
-  options?: InputOptions;
-}
-
-interface FormProps {
-  inputsData: InputData[];
-  link: string;
-}
-
-const FormUI: FC<FormProps> = memo(({ inputsData, link }) => {
+export const Form: FC<FormProps> = memo(({ inputsData, link }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
 
   const handlePasswordVisibility = useCallback(() => {
@@ -126,5 +89,3 @@ const FormUI: FC<FormProps> = memo(({ inputsData, link }) => {
     </form>
   );
 });
-
-export default FormUI;

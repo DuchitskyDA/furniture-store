@@ -1,11 +1,13 @@
-import styles from './footer.module.scss';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import styles from '../../../app/styles/footer.module.scss';
+import Text from '../../../shared/ui/text/Text.tsx';
 import { Link } from 'react-router-dom';
-import Text from '../text/Text.tsx';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  YouTubeIcon,
+} from '../../../shared/icons';
 
-const FooterUI = () => {
+export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Text
@@ -95,5 +97,3 @@ const FooterUI = () => {
     </footer>
   );
 };
-
-export default FooterUI;

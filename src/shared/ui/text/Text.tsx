@@ -1,6 +1,6 @@
 import { ElementType, FC, ReactNode } from 'react';
 import { clsx } from 'clsx';
-import styles from './text.module.scss';
+import styles from '../../../app/styles/text.module.scss';
 import { FontFamiliesClasses } from '../../../utils/constants/fontFamilyClasses.ts';
 
 interface TitleProps {

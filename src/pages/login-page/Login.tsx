@@ -1,8 +1,7 @@
 import AuthHeading from '../../components/ui/auth-heading/AuthHeading.tsx';
-import styles from './login.module.scss';
+import styles from '../../app/styles/login.module.scss';
 import AuthContent from '../../components/ui/auth-content/AuthContent.tsx';
-import { InputData } from '../../components/ui/form/FormUI.tsx';
-import { Footer, Header } from '../../components';
+import { InputData } from '../../features/form/ui/Form.tsx';
 
 const mockInputs: InputData[] = [
   {
@@ -34,7 +33,6 @@ const mockInputs: InputData[] = [
 export const Login = () => {
   return (
     <>
-      <Header />
       <main className={styles.login}>
         <div className={styles.wrapper}>
           <AuthHeading
@@ -50,7 +48,6 @@ export const Login = () => {
           />
         </div>
       </main>
-      <Footer />
     </>
   );
 };

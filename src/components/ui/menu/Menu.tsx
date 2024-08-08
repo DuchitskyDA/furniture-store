@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
 import styles from './menu.module.scss';
 import Button from '../../ui/button/Button';
-import Text from '../../ui/text/Text.tsx';
+import Text from '../../../shared/ui/text/Text.tsx';
 
 interface MenuProps {
   active: boolean;

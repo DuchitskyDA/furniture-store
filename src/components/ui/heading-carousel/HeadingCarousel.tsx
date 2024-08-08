@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import Carousel from '../carousel/Carousel';
+import { Carousel } from '../../../features/';
 import styles from './index.module.scss';
 
-interface HeadingCarouselUIProps {
+interface HeadingCarouselProps {
   images?: {
     src: string;
     alt?: string;
@@ -20,9 +20,7 @@ const mockImages = [
   },
 ];
 
-const HeadingCarouselUI: FC<HeadingCarouselUIProps> = ({
-  images = mockImages,
-}) => {
+const HeadingCarousel: FC<HeadingCarouselProps> = ({ images = mockImages }) => {
   return (
     <section className={styles.container}>
       <Carousel visibleItems={1}>
@@ -34,4 +32,4 @@ const HeadingCarouselUI: FC<HeadingCarouselUIProps> = ({
   );
 };
 
-export default HeadingCarouselUI;
+export default HeadingCarousel;
