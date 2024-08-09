@@ -1,4 +1,4 @@
-export * from '../pages/main-page/ui/Header.tsx';
+export * from '../features/navigation/ui/Header/Header.tsx';
 export * from './profile/Profile';
 export * from './services/Services';
 export * from './living-room/LivingRoom';

@@ -9,13 +9,12 @@
     }
   ],
   "compilerOptions": {
-    // ...
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
-    // ...
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"],
+    "@styles/*": ["src/app/styles/*"],
+    "@shared/*": ["src/shared/*"],
+    "@features/*": ["src/features/*"],
   }
+}
 }

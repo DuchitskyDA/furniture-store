@@ -1,4 +1,4 @@
-import styles from '../../../app/styles/footer.module.scss';
+import styles from '@styles/footer.module.scss';
 import Text from '../../../shared/ui/text/Text.tsx';
 import { Link } from 'react-router-dom';
 import {
