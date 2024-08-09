@@ -1,6 +1,7 @@
-import { Footer, Header, Profile } from '../components/';
+import { Footer, Profile } from '../components/';
+import { Header } from '@features/navigation/ui/Header';
 import { Route, Routes } from 'react-router-dom';
-import { Login, MainPage, NotFound, Register } from '../pages';
+import { Login, MainPage, NotFound, Register } from '@/pages';
 
 function App() {
   return (

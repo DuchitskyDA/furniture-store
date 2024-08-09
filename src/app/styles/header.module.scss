@@ -1,4 +1,4 @@
-@import '../../../styles/variabels';
+@import '../../styles/variabels';
 
 .header {
   display: flex;
@@ -11,7 +11,17 @@
   background-color: $color-bg;
   box-shadow: 0 1px 6px 0 rgb(34 60 80 / 20%);
 
-  .menu {
+  &__menu_icon {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__profile_icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
