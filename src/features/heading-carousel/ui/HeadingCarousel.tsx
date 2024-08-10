@@ -1,13 +1,7 @@
 import { FC } from 'react';
-import { Carousel } from '../../../features/';
-import styles from './index.module.scss';
-
-interface HeadingCarouselProps {
-  images?: {
-    src: string;
-    alt?: string;
-  }[];
-}
+import { Carousel } from '@/features/carousel';
+import { HeadingCarouselProps } from '@features/heading-carousel/types/types.ts';
+import styles from '@styles/heading-carousel.module.scss';
 
 const mockImages = [
   {

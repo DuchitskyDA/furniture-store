@@ -5,7 +5,7 @@ import { useSwipeHandlers } from '../lib/useSwipeHandlers';
 import styles from '../../../app/styles/carousel.module.scss';
 import { CarouselProps } from '../types/carouselTypes.ts';
 
-export const Carousel: FC<CarouselProps> = memo(
+const Carousel: FC<CarouselProps> = memo(
   ({ children, arrows, visibleItems }) => {
     const { currentIndex, showNextImage, showPrevImage, resetInterval } =
       useCarousel(children.length, visibleItems);
@@ -58,3 +58,4 @@ export const Carousel: FC<CarouselProps> = memo(
     );
   },
 );
+export default Carousel;

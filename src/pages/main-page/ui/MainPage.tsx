@@ -1,5 +1,5 @@
 import styles from '@styles/main.module.scss';
-import HeadingCarousel from '../../../components/ui/heading-carousel/HeadingCarousel.tsx';
+import { HeadingCarousel } from '@features/heading-carousel';
 import {
   Articles,
   LivingRoom,

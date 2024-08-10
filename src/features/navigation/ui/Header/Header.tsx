@@ -4,7 +4,7 @@ import { MenuIcon, PersonIcon } from '@shared/icons';
 import Text from '@shared/ui/text/Text.tsx';
 import { Link } from 'react-router-dom';
 import Menu from '../../../../components/ui/menu/Menu.tsx';
-
+// TODO: перенести в navigation Menu
 export const Header: FC = () => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
   const handleOpenMenu = useCallback(
