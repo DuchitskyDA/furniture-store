@@ -1,1 +1,1 @@
-export { default as Carousel } from '@/features/carousel/ui/Carousel.tsx';
+export { default as Carousel } from './ui/Carousel';
