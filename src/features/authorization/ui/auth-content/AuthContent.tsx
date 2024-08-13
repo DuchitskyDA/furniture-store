@@ -1,8 +1,9 @@
 import { FC } from 'react';
-import styles from './auth-content.module.scss';
-import Text from '../../../shared/ui/text/Text.tsx';
-import { Form, InputData } from '../../../features';
+import styles from '@styles/auth-content.module.scss';
+import Text from '@shared/ui/text/Text.tsx';
+import { Form } from '@features/form';
 import { Link } from 'react-router-dom';
+import { InputData } from '@features/form/types/types.ts';
 
 interface AuthContentProps {
   title: string;

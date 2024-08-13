@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import styles from './auth-heading.module.scss';
+import styles from '@styles/auth-heading.module.scss';
 import { Link } from 'react-router-dom';
-import Text from '../../../shared/ui/text/Text.tsx';
+import Text from '@shared/ui/text/Text.tsx';
 
 interface AuthHeadingProps {
   src: string;

@@ -1,13 +1,13 @@
-import styles from '../../../app/styles/form.module.scss';
+import styles from '@styles/form.module.scss';
 import { FieldErrors, useForm } from 'react-hook-form';
 import { FC, memo, useCallback, useState } from 'react';
 import Button from '../../../components/ui/button/Button.tsx';
-import Text from '../../../shared/ui/text/Text.tsx';
+import Text from '@shared/ui/text/Text.tsx';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { FormProps, FormValues } from '../types/types.ts';
 
-export const Form: FC<FormProps> = memo(({ inputsData, link }) => {
+const Form: FC<FormProps> = memo(({ inputsData, link }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
 
   const handlePasswordVisibility = useCallback(() => {
@@ -89,3 +89,4 @@ export const Form: FC<FormProps> = memo(({ inputsData, link }) => {
     </form>
   );
 });
+export default Form;

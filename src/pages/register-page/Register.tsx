@@ -1,8 +1,8 @@
 import type { FC } from 'react';
-import styles from '../../app/styles/register.module.scss';
-import { InputData } from '../../features/form/ui/Form.tsx';
-import AuthHeading from '../../components/ui/auth-heading/AuthHeading.tsx';
-import AuthContent from '../../components/ui/auth-content/AuthContent.tsx';
+import styles from '@styles/register.module.scss';
+import { InputData } from '@features/form/types/types.ts';
+import { AuthHeading } from '@features/authorization/ui/auth-heading';
+import { AuthContent } from '@features/authorization/ui/auth-content';
 
 const mockInputs: InputData[] = [
   {

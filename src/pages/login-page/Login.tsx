@@ -1,7 +1,7 @@
-import AuthHeading from '../../components/ui/auth-heading/AuthHeading.tsx';
+import AuthHeading from '@features/authorization/ui/auth-heading/AuthHeading.tsx';
 import styles from '../../app/styles/login.module.scss';
-import AuthContent from '../../components/ui/auth-content/AuthContent.tsx';
-import { InputData } from '../../features/form/ui/Form.tsx';
+import AuthContent from '@features/authorization/ui/auth-content/AuthContent.tsx';
+import { InputData } from '@features/form/types/types.ts';
 
 const mockInputs: InputData[] = [
   {

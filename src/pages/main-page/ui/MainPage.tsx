@@ -1,8 +1,9 @@
 import styles from '@styles/main.module.scss';
 import { HeadingCarousel } from '@features/heading-carousel';
 import { Articles } from '@features/articles';
-import { LivingRoom, NewProducts, Services } from '@/components';
+import { NewProducts, Services } from '@/components';
 import Banner from '../../../components/ui/banner/Banner.tsx';
+import { AccentCategories } from '@features/accent-categories';
 
 export const MainPage = () => {
   return (
@@ -10,7 +11,7 @@ export const MainPage = () => {
       <main className={styles.main}>
         <HeadingCarousel />
         <Services />
-        <LivingRoom />
+        <AccentCategories />
         <NewProducts />
         <Banner />
         <Articles />
